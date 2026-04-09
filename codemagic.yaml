@@ -1,16 +1,11 @@
 workflows:
   android-release:
-    name: Android Release Build
-
+    name: Android Build
     environment:
-      flutter: stable
-
+      java: 17
     scripts:
-      - name: Get dependencies
-        script: flutter pub get
-
-      - name: Build APK
-        script: flutter build apk --release
-
+      - cd android
+      - chmod +x gradlew
+      - ./gradlew assembleRelease
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - android/app/build/outputs/apk/release/app-release.apk
