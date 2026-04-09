@@ -15,6 +15,7 @@
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
 
+            <!-- تشغيل التطبيق -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -22,5 +23,11 @@
 
         </activity>
 
+        <!-- مهم جداً لحل المشكلة -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
     </application>
+
 </manifest>
