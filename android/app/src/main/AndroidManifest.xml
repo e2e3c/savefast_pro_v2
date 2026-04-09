@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.savefast_pro">
+
+    <application
+        android:label="SaveFast Pro"
+        android:icon="@mipmap/ic_launcher">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8647572192042201~1091736371"/>
+
+    </application>
+</manifest>
